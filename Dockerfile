@@ -7,4 +7,6 @@ RUN printf '\nServerName localhost\n' >> /usr/local/apache2/conf/httpd.conf
 
 RUN printf '\nErrorDocument 404 /404.html\n' >> /usr/local/apache2/conf/httpd.conf
 
+RUN printf '\nServerSignature Off\n' >> /usr/local/apache2/conf/httpd.conf
+
 EXPOSE 80
